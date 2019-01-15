@@ -5,13 +5,55 @@
 <head>
     <title>Tensorflow JS Examples</title>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.14.1/dist/tf.min.js"></script>
-    <script src="./intro.js"></script>
+
+    <style>
+        body {
+            padding: 1rem 2rem;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box h2 {
+            text-align: center;
+            padding: .75rem;
+            border-bottom: 1px solid;
+            width: 50%
+        }
+
+        .pages {
+            margin-top: 1rem;
+        }
+
+        .pages a {
+            padding: 1rem;
+        }
+    </style>
 </head>
 
 <body>
-    <div>
-        <a href="./concepts/core/core.html">Core concepts</a>
-    </div>
+    <h1>TensorFlow.js Study</h1>
+    <hr>
+    <section>
+        <div class="box">
+            <h2>Concepts:</h2>
+            <div class="pages">
+                <a href="./concepts/core/core.html">Core concepts</a>
+            </div>
+        </div>
+        <div class="box">
+            <h2>Examples:</h2>
+            <div class="pages">
+                <a href="./examples/polynomial-regression/index.html">Polynomial Regression</a>
+            </div>
+        </div>
+    </section>
 </body>
+
+<script src="./intro.js"></script>
 
 </html>
